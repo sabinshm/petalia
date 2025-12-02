@@ -1,0 +1,332 @@
+/* PETALIA POPUP */
+.petalia-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+  z-index: 99999;
+}
+
+.petalia-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.petalia-box {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 380px;
+  text-align: center;
+  animation: popIn 0.5s ease;
+  box-shadow: 0 0 30px rgba(249, 168, 212, 0.4);
+}
+
+.petalia-box h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #f472b6;
+  margin-bottom: 12px;
+}
+
+.petalia-box p {
+  color: #4b5563;
+  font-size: 15px;
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.petalia-btn {
+  display: inline-block;
+  background: #f472b6;
+  color: white;
+  padding: 10px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+.petalia-btn:hover {
+  background: #ec4899;
+  transform: scale(1.05);
+}
+
+.petalia-box button {
+  background: transparent;
+  border: 1px solid #f472b6;
+  color: #f472b6;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.petalia-box button:hover {
+  background: #f472b6;
+  color: white;
+  transform: scale(1.05);
+}
+
+.hero {
+  min-height: 70vh; /* make it fill the full screen */
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30%;
+  position: relative;
+  background-image: url("../images-petalia/home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero .container {
+  margin-left: 0;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  max-width: 600px;
+}
+.welcoming {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  margin-right: 200px;
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.08);
+}
+
+.lead {
+  color: #fff;
+  font-family: "Prata", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments for hero section */
+@media (max-width: 768px) {
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    text-align: center;
+    min-height: 65vh;
+  }
+
+  .hero .container {
+    text-align: center;
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .welcoming {
+    font-size: 2.2rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .btn-cta {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 55vh;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .hero .container {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .welcoming {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .lead {
+    font-size: 0.9rem;
+  }
+
+  .btn-cta {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+.homecard {
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(180deg, var(--green), rgb(183, 189, 182));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe {
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(180deg, var(--green), rgb(183, 189, 182));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.petal-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+/* ===== Section: HOME - PETALS & BACKDROP ===== */
+.petal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  opacity: 0.95;
+  transform: rotate(25deg);
+}
+/* ===== Section: ABOUT / CONTENT / UTILITIES ===== */
+.p1 {
+  left: 8%;
+  top: -12%;
+  animation: fall 9s linear infinite;
+}
+.p2 {
+  left: 22%;
+  top: -15%;
+  animation: fall 12s linear infinite;
+  animation-delay: 1s;
+}
+.p3 {
+  left: 45%;
+  top: -8%;
+  animation: fall 11s linear infinite;
+  animation-delay: 2s;
+}
+.p4 {
+  left: 70%;
+  top: -12%;
+  animation: fall 10s linear infinite;
+  animation-delay: 0.4s;
+}
+.p5 {
+  left: 88%;
+  top: -20%;
+  animation: fall 13s linear infinite;
+  animation-delay: 2.2s;
+}
+.p6 {
+  left: 15%;
+  top: -20%;
+  animation: fall 13s linear infinite;
+  animation-delay: 2.2s;
+}
+.p7 {
+  left: 65%;
+  top: -10%;
+  animation: fall 13s linear infinite;
+  animation-delay: 1.2s;
+}
+@keyframes popIn {
+  from {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0) scale(0.95);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg) scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.card {
+  border-radius: 12px;
+}
+/* ===== Section: CARDS & GRID ===== */
+.thumb {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+/* ===== Section: PRODUCT THUMBS / CARDS ===== */
+
+/* stacked base/hover image strategy for accessibility and better SEO */
+.thumb img.base,
+.thumb img.hover {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain; /* ensure whole bottle visible */
+}
+.thumb img.base {
+  transition: opacity 0.25s ease, transform 0.25s ease, filter 0.25s ease;
+  opacity: 1;
+}
+.scent-notes {
+  font-style: italic;
+  opacity: 0.9;
+}
+.thumb img.base {
+  position: relative;
+  z-index: 1;
+}
+.thumb img.hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill the div on hover */
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 2;
+}
+.thumb.has-hover:hover img.hover {
+  opacity: 1;
+}
+.thumb.has-hover:hover img.base {
+  opacity: 0;
+}

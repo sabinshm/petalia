@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Petalia</title>
+  <meta name="description" content="Contact Petalia for custom fragrance consultations, bulk orders, and perfume questions. Visit our Beirut boutique or reach out online.">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style-sheets/contact.css">
+  <link rel="stylesheet" href="style-sheets/common.css">
+   <link rel="stylesheet" href="style-sheets/nav.css">
+   <link rel="stylesheet" href="style-sheets/footer.css">
+
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+  </style>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-pink shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="images-petalia/LOGO.svg" alt="Petalia Logo" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain3">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Collections</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="collections.html#him">For Him</a></li>
+              <li><a class="dropdown-item" href="collections.html#her">For Her</a></li>
+              <li><a class="dropdown-item" href="collections.html#unisex">Unisex</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="deals.html">Deals</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link cart-link" href="cart.html" aria-label="Cart"><i class="bi bi-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER SECTION -->
+  <header class="container mt-5 text-center">
+    <h1 class="page-title mb-3">Let's Create Together</h1>
+    <p class="contact-subtitle mb-4">Whether you're seeking your signature scent or have questions about our collections, we're here to help you find your perfect fragrance story.</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container pb-5">
+    <!-- Quick Contact Options -->
+    <div class="row mb-5" id="quick-options">
+      <div class="col-md-4 mb-3">
+        <div class="card-pink text-center p-4">
+          <i class="bi bi-chat-heart contact-card-icon mb-3"></i>
+          <h5 class="fw-bold mb-2 ">Custom Fragrance Consultation</h5>
+          <p class="small mb-3 ">Book a personal session to create your unique scent</p>
+          <button class="btn btn-cta">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card-pink text-center p-4">
+          <i class="bi bi-gift contact-card-icon mb-3"></i>
+          <h5 class="fw-bold mb-2 ">Bulk Orders & Gifts</h5>
+          <p class="small mb-3 ">Perfect for weddings, events, or corporate gifts</p>
+          <button class="btn btn-cta" onclick="selectInquiryType('bulk')">Get Quote</button>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card-pink text-center p-4">
+          <i class="bi bi-question-circle contact-card-icon mb-3"></i>
+          <h5 class="fw-bold mb-2 ">General Support</h5>
+          <p class="small mb-3 ">Shipping, returns, or product questions</p>
+          <button class="btn btn-cta" onclick="selectInquiryType('support')">Ask Away</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enhanced Contact Form -->
+    <div class="row g-4" id="main-contact">
+      <!-- LEFT INFO PANEL -->
+      <div class="col-md-5">
+        <div class="contact-info-card">
+          <h5 class="contact-info-title mb-4">Visit Our Boutique</h5>
+          
+          <div class="contact-item d-flex align-items-center mb-4">
+            <div class="contact-icon me-3">
+              <i class="bi bi-geo-alt-fill contact-icon-symbol"></i>
+            </div>
+            <div>
+              <strong class="contact-label">Petalia Boutique</strong><br>
+              <span class="contact-detail">Downtown Beirut, Lebanon</span><br>
+              <small class="contact-note">By appointment for personal consultations</small>
+            </div>
+          </div>
+
+          <div class="contact-item d-flex align-items-center mb-4">
+            <div class="contact-icon me-3">
+              <i class="bi bi-clock contact-icon-symbol"></i>
+            </div>
+            <div>
+              <strong class="contact-label">Business Hours</strong><br>
+              <span class="contact-detail">Monday - Friday: 10:00 AM - 7:00 PM</span><br>
+              <span class="contact-detail">Saturday: 10:00 AM - 5:00 PM</span><br>
+              <small class="contact-note-warning">Sunday: By appointment only</small>
+            </div>
+          </div>
+
+          <div class="contact-item d-flex align-items-center mb-4">
+            <div class="contact-icon me-3">
+              <i class="bi bi-telephone-fill contact-icon-symbol"></i>
+            </div>
+            <div>
+              <strong class="contact-label">Call or WhatsApp</strong><br>
+              <a href="tel:+96170123456" class="contact-link">+961 70 123 456</a><br>
+              <small class="contact-note">Response time: Within 2 hours</small>
+            </div>
+          </div>
+
+          <div class="contact-item d-flex align-items-center mb-4">
+            <div class="contact-icon me-3">
+              <i class="bi bi-envelope-fill contact-icon-symbol"></i>
+            </div>
+            <div>
+              <strong class="contact-label">Email</strong><br>
+              <a href="mailto:hello@petalia.com" class="contact-link">hello@petalia.com</a><br>
+              <small class="contact-note">Response time: Within 24 hours</small>
+            </div>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="mt-4 pt-4 border-top social-section">
+            <h6 class="social-title mb-3">Follow Our Journey</h6>
+            <div class="d-flex gap-3">
+              <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-btn"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="col-md-7" id="form">
+        <div class="contact-form-card">
+          <h5 class="contact-form-title mb-4">Send Us a Message</h5>
+          
+          <form id="contactForm" class="enhanced-contact-form">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input class="form-control contact-input" type="text" id="nameField" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input class="form-control contact-input" type="email" id="emailField" placeholder="Your Email" required>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input class="form-control contact-input" type="tel" id="phoneField" placeholder="Phone (Optional)">
+              </div>
+              <div class="col-md-6 mb-3">
+                <select class="form-select contact-select" id="inquiryType" required>
+                  <option value="">How can we help?</option>
+                  <option value="consultation">Custom Fragrance Consultation</option>
+                  <option value="bulk">Bulk Orders & Events</option>
+                  <option value="product">Product Questions</option>
+                  <option value="shipping">Shipping & Returns</option>
+                  <option value="partnership">Business Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <textarea class="form-control contact-textarea" id="msgField" rows="5" placeholder="Tell us about your fragrance needs or ask your question..." required></textarea>
+              <div class="form-text contact-help-text">The more details you share, the better we can help you!</div>
+            </div>
+            
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input contact-checkbox" type="checkbox" id="newsletter">
+                <label class="form-check-label contact-checkbox-label" for="newsletter">
+                  Keep me updated about new fragrances and exclusive offers
+                </label>
+              </div>
+            </div>
+            
+            <button class="btn btn-cta w-100" type="submit">
+              <i class="bi bi-send me-2"></i>Send Message
+            </button>
+            
+            <div id="contactFeedback" class="mt-3" aria-live="polite"></div>
+            
+            <div class="mt-3 text-center">
+              <small class="contact-response-time">We typically respond within 2-24 hours</small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="row mt-5" id="faq">
+      <div class="col-12">
+        <div class="faq-section p-5">
+          <h4 class="text-center mb-4 faq-title">Frequently Asked Questions</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="faq-item mb-3">
+                <h6 class="faq-question">How long do custom fragrances take?</h6>
+                <p class="faq-answer">Custom scent creation typically takes 2-3 weeks from consultation to final product.</p>
+              </div>
+              <div class="faq-item mb-3">
+                <h6 class="faq-question">Do you offer international shipping?</h6>
+                <p class="faq-answer">Yes! We ship worldwide. Shipping costs and times vary by destination.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="faq-item mb-3">
+                <h6 class="faq-question">What's your return policy?</h6>
+                <p class="faq-answer">30-day satisfaction guarantee on all unopened products. Custom scents are final sale.</p>
+              </div>
+              <div class="faq-item mb-3">
+                <h6 class="faq-question">Minimum order for bulk purchases?</h6>
+                <p class="faq-answer">Bulk pricing starts at 10+ bottles. Perfect for weddings and corporate gifts!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="petalia-footer mt-5">
+    <div class="container py-4">
+      <div class="d-md-none text-center">
+        <div class="mb-4">
+          <h6 class="footer-subtitle">Contact</h6>
+          <ul class="list-unstyled footer-list">
+            <li><a href="contact.html#quick-options">Quick Options</a></li>
+            <li><a href="contact.html#main-contact">Contact Form</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h6 class="footer-subtitle">Quick Links</h6>
+          <ul class="list-unstyled footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h6 class="footer-subtitle">Customer Service</h6>
+          <ul class="list-unstyled footer-list">
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h6 class="footer-subtitle">Contact</h6>
+          <ul class="list-unstyled footer-list">
+            <li>Email: support@petalia.com</li>
+            <li>Phone: +961 81 234 567</li>
+            <li class="mt-3 d-flex justify-content-center gap-3">
+              <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row d-none d-md-flex pt-4">
+        <div class="col-md-3">
+          <h5 class="footer-subtitle">Contact</h5>
+          <ul class="list-unstyled footer-list">
+            <li><a href="contact.html#quick-options">Quick Options</a></li>
+            <li><a href="contact.html#main-contact">Contact Form</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer-subtitle">Quick Links</h5>
+          <ul class="list-unstyled footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer-subtitle">Customer Service</h5>
+          <ul class="list-unstyled footer-list">
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer-subtitle">Contact Us</h5>
+          <ul class="list-unstyled footer-list">
+            <li>Email: support@petalia.com</li>
+            <li>Phone: +961 81 234 567</li>
+            <li class="mt-3 d-flex align-items-center gap-3">
+              <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom text-center py-3">
+        © 2025 Petalia. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+ 
+</body>
+</html>

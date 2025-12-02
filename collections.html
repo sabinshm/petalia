@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Collections — Petalia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style-sheets/collections.css">
+  <link rel="stylesheet" href="style-sheets/common.css">
+  <link rel="stylesheet" href="style-sheets/footer.css">
+  <link rel="stylesheet" href="style-sheets/nav.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-pink">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="images-petalia/LOGO.svg" alt="Petalia Logo" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain3" aria-controls="navMain3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+        <span class="price" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain3">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="collections.html" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
+            <ul class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <li><a class="dropdown-item" href="collections.html#him">For Him</a></li>
+              <li><a class="dropdown-item" href="collections.html#her">For Her</a></li>
+              <li><a class="dropdown-item" href="collections.html#unisex">Unisex</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="deals.html">Deals</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link cart-link" href="cart.html" aria-label="Cart"><i class="bi bi-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h2 class="page-title text-center mb-3">Collections</h2>
+
+    <h3 class="mb-4 categories" id="him">For Him</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <div class="thumb mb-3 men-azure has-hover">
+            <img class="base" src="images-petalia/azure_tanzy.svg" alt="Azure Tanzy bottle">
+            <img class="hover" src="images-petalia/blue_tanzy_hover.jpg" alt="Azure Tanzy hover">
+          </div>
+          <h5>AZURE TANZY</h5>
+          <p class="mb-0">Blue floral bouquet—an airy blue-flower scent suitable for men, crisp yet aromatic.</p>
+          <p class="scent-notes small text-muted">Top: Bergamot, Sea Salt • Middle: Blue blossom, Lavender • Base: Cedarwood, Musk</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price" >$12</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 men-cherry has-hover">
+            <img class="base" src="images-petalia/Cherry_men.svg" alt="Cherry men bottle">
+            <img class="hover" src="images-petalia/Cherry_hover.jpeg" alt="Cherry hover">
+          </div>
+          <h5>CHERRY</h5>
+          <p class="mb-0">Rich tart cherry with subtle spice and a warm woody undertone — vivid and refined.</p>
+          <p class="scent-notes small text-muted">Top: Sour Cherry, Black Pepper • Middle: Almond Accord, Heart Cherry • Base: Tonka, Sandalwood</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 men-greenapple has-hover">
+            <img class="base" src="images-petalia/green_apple_men.svg" alt="Green Apple men bottle">
+            <img class="hover" src="images-petalia/green_apples_hover.jpeg" alt="Green Apple hover">
+          </div>
+          <h5>GREEN APPLE</h5>
+          <p class="mb-0">Crisp green apple paired with a clean, musky base — bright and invigorating.</p>
+          <p class="scent-notes small text-muted">Top: Green Apple, Pear • Middle: Apple Blossom, Freesia • Base: Cedar, White Musk</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$4</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- repeat rows simplified & consistent -->
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 men-greenolives has-hover">
+            <img class="base" src="images-petalia/green_olives_men.svg" alt="Green Olives men bottle">
+            <img class="hover" src="images-petalia/green-olives hover.jpeg" alt="Green Olives hover">
+          </div>
+          <h5>GREEN OLIVES</h5>
+          <p class="mb-0">Herbaceous olive leaf accents warmed by cedar and amber — fresh yet grounded.</p>
+          <p class="scent-notes small text-muted">Top: Green Leaves, Bergamot • Middle: Olive Leaf, Herbaceous Notes • Base: Cedar, Amber</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$12</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 men-nocturnal has-hover">
+            <img class="base" src="images-petalia/nocturnal_steel_men.svg" alt="Nocturnal Steel men bottle">
+            <img class="hover" src="images-petalia/nocturnal_steel_hover.jpg" alt="Nocturnal Steel hover">
+          </div>
+          <h5>NOCTURNAL STEEL</h5>
+          <p class="mb-0">Smoky metallic accords blended with amber and vetiver — bold, mysterious, nocturnal.</p>
+          <p class="scent-notes small text-muted">Top: Bergamot, Spice • Middle: Metallic Accord, Leather • Base: Vetiver, Amber, Musk</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 men-warm-chocolate has-hover">
+            <img class="base" src="images-petalia/warm-chocolate_men.svg" alt="Warm Chocolate men bottle">
+            <img class="hover" src="images-petalia/warm_chocolate_hover.jpeg" alt="Warm Chocolate hover">
+          </div>
+          <h5>WARM CHOCOLATE</h5>
+          <p class="mb-0">Cocoa-rich warm chocolate with vanilla and patchouli — cozy and indulgent.</p>
+          <p class="scent-notes small text-muted">Top: Cocoa, Orange Zest • Middle: Chocolate, Caramel • Base: Vanilla, Tonka, Patchouli</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="mb-4 mt-5 categories" id="her">For Her</h3>
+    <div class="row g-4">
+       <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 her-velvet-petal has-hover">
+            <img class="base" src="images-petalia/Velvet_Petal.svg" alt="Velvet Petal bottle">
+            <img class="hover" src="images-petalia/Velvet_Petal_hover.jpeg" alt="Velvet Petal hover">
+          </div>
+          <h5>VELVET PETAL</h5>
+          <p class="mb-0">Soft rose and vanilla with a powdery musk finish — romantic and graceful.</p>
+          <p class="scent-notes small text-muted">Top: Bergamot, Citrus • Middle: Rose, Peony • Base: Vanilla, Powdered Musk</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$12</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 her-soft-seraph has-hover">
+            <img class="base" src="images-petalia/Soft_Seraph.svg" alt="Soft Seraph bottle">
+            <img class="hover" src="images-petalia/Soft_Seraph_hover.jpeg" alt="Soft Seraph hover">
+          </div>
+          <h5>SOFT SERAPH</h5>
+          <p class="mb-0">Delicate white florals and airy amber for an elegant, luminous scent.</p>
+          <p class="scent-notes small text-muted">Top: Neroli, Orange Blossom • Middle: Jasmine, Orange Flower • Base: Amber, Sandalwood</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 her-lueur-femme has-hover">
+            <img class="base" src="images-petalia/Lueur_Femme.svg" alt="Lueur Femme bottle">
+            <img class="hover" src="images-petalia/Lueur_Femme_hover.avif" alt="Lueur Femme hover">
+          </div>
+          <h5>LUEUR FEMME</h5>
+          <p class="mb-0">Radiant citrus and luminous floral heart with a warm amber glow.</p>
+          <p class="scent-notes small text-muted">Top: Lemon, Pear • Middle: Iris, Rose • Base: Cashmere Wood, Amber</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$4</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- repeat rows simplified & consistent -->
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 her-dusty-rose has-hover">
+            <img class="base" src="images-petalia/Dusty_Rose.svg" alt="Dusty Rose bottle">
+            <img class="hover" src="images-petalia/Dusty%20Rose%20hover.jpeg" alt="Dusty Rose hover">
+          </div>
+          <h5>DUSTY ROSE</h5>
+          <p class="mb-0">Dusty rose petals layered with soft powdery notes and a comforting base.</p>
+          <p class="scent-notes small text-muted">Top: Pink Pepper • Middle: Damask Rose, Powder • Base: Sandalwood, Musk</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$12</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 her-blush-bloom has-hover">
+            <img class="base" src="images-petalia/Blush_Bloom.svg" alt="Blush Bloom bottle">
+            <img class="hover" src="images-petalia/blush_bloom_hover.jpeg" alt="Blush Bloom hover">
+          </div>
+          <h5>BLUSH BLOOM</h5>
+          <p class="mb-0">Peony and pear in a soft bouquet with a creamy finish — playful and pretty.</p>
+          <p class="scent-notes small text-muted">Top: Pear, Bergamot • Middle: Peony, Rose • Base: Creamy Musk, Amber</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 her-bloom-whisper has-hover">
+            <img class="base" src="images-petalia/Bloom%20Whisper.svg" alt="Bloom Whisper bottle">
+            <img class="hover" src="images-petalia/Bloom_Whisper_hover.avif" alt="Bloom Whisper hover">
+          </div>
+          <h5>BLOOM WHISPER</h5>
+          <p class="mb-0">Peach and blue florals—juicy peach notes intertwined with soft blue florals for a luminous, feminine scent.</p>
+          <p class="scent-notes small text-muted">Top: Peach, Clementine • Middle: Blue Florals (Hyacinth), Jasmine • Base: Light Amber, White Musk</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="mb-4 mt-5 categories" id="unisex">Unisex</h3>
+    <div class="row g-4">
+        <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 unisex-clementine has-hover">
+            <img class="base" src="images-petalia/clementine_unisex.svg" alt="Clementine Unisex bottle">
+            <img class="hover" src="images-petalia/clementine_hover.jpeg" alt="Clementine hover">
+          </div>
+          <h5>CLEMENTINE</h5>
+          <p class="mb-0">12 ribbon blooms</p>
+            <p class="scent-notes small text-muted">Top: Clementine, Bergamot • Middle: Orange Blossom, Neroli • Base: Amber, Cedar</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$12</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 unisex-pistachio has-hover">
+            <img class="base" src="images-petalia/Pistachio_Luxe.svg" alt="Pistachio Luxe bottle">
+            <img class="hover" src="images-petalia/Pistashio_Luxe_hover.jpeg" alt="Pistachio hover">
+          </div>
+          <h5>PISTACHIO LUXE</h5>
+          <p class="mb-0">20 ribbon blooms</p>
+            <p class="scent-notes small text-muted">Top: Green Nut, Almond • Middle: Pistachio, Hazelnut • Base: Vanilla, Tonka</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 unisex-desert-aura has-hover">
+            <img class="base" src="images-petalia/Desert%20Aura.svg" alt="Desert Aura bottle">
+            <img class="hover" src="images-petalia/Desert%20Aura%20hover.jpeg" alt="Desert Aura hover">
+          </div>
+          <h5>DESERT AURA</h5>
+          <p class="mb-0">3 ribbon blooms</p>
+            <p class="scent-notes small text-muted">Top: Saffron, Orange • Middle: Sandalwood, Resinous Notes • Base: Amber, Oud-ish Resin</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$4</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- repeat rows simplified & consistent -->
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 unisex-urban-moss has-hover">
+            <img class="base" src="images-petalia/Urban_Moss.svg" alt="Urban Moss bottle">
+            <img class="hover" src="images-petalia/Urban_Moss_hover.jpeg" alt="Urban Moss hover">
+          </div>
+          <h5>URBAN MOSS</h5>
+          <p class="mb-0">12 ribbon blooms</p>
+            <p class="scent-notes small text-muted">Top: Lemon, Bergamot • Middle: Vetiver, Green Moss • Base: Cedarwood, Patchouli</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$12</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 unisex-vanilla has-hover">
+            <img class="base" src="images-petalia/Vanilla.svg" alt="Vanilla bottle">
+            <img class="hover" src="images-petalia/Vanilla_hover.jpeg" alt="Vanilla hover">
+          </div>
+          <h5>VANILLA</h5>
+          <p class="mb-0">20 ribbon blooms</p>
+            <p class="scent-notes small text-muted">Top: Spice, Vanilla Bean • Middle: Creamy Vanilla, Caramel • Base: Sandalwood, Tonka</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class=" card p-3 text-center">
+          <div class="thumb mb-3 unisex-amber-drift has-hover">
+            <img class="base" src="images-petalia/Amber_Drift.svg" alt="Amber Drift bottle">
+            <img class="hover" src="images-petalia/Amber_Drift_hover.webp" alt="Amber Drift hover">
+          </div>
+          <h5>AMBER DRIFT</h5>
+          <p class="mb-0">20 ribbon blooms</p>
+            <p class="scent-notes small text-muted">Top: Bergamot, Orange • Middle: Amber, Resin • Base: Vanilla, Oud-like Warmth</p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="price">$18</span>
+            <button class="btn-add-to-card">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<footer class="petalia-footer mt-5">
+  <div class="container py-4">
+<div class="d-md-none text-center">
+
+  <!-- Column 1 -->
+  <div class="mb-4">
+    <h6 class="footer-subtitle">Collections</h6>
+      <ul class="list-unstyled ps-3 mt-2 footer-list">
+        <li><a href="collections.html#him">For him</a></li>
+        <li><a href="collections.html#her">For her</a></li>
+        <li><a href="collections.html#unisex">Unisex</a></li>
+      </ul>
+  </div>
+
+  <!-- Column 2 -->
+  <div class="mb-4">
+    <h6 class="footer-subtitle">Quick Links</h6>
+    <ul class="list-unstyled footer-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="deals.html">Deals</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </div>
+
+  <!-- Column 3 -->
+  <div class="mb-4">
+    <h6 class="footer-subtitle">Customer Service</h6>
+    <ul class="list-unstyled footer-list">
+      <li><a href="#">Shipping & Returns</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+  </div>
+
+  <!-- Column 4 -->
+  <div class="mb-4">
+    <h6 class="footer-subtitle">Contact</h6>
+    <ul class="list-unstyled footer-list">
+      <li>Email: support@petalia.com</li>
+      <li>Phone: +961 81 234 567</li>
+      <li class="mt-3 d-flex justify-content-center gap-3">
+        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+    <!-- Desktop: 4 Columns -->
+    <div class="row d-none d-md-flex pt-4">
+
+      <!-- Column 1 -->
+      <div class="col-md-3">
+        <h5 class="footer-subtitle">Collections</h5>
+         <ul class="list-unstyled footer-list">
+            <li><a href="collections.html#him">For him</a></li>
+            <li><a href="collections.html#her">For her</a></li>
+            <li><a href="collections.html#unisex">Unisex</a></li>
+          </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-3">
+        <h5 class="footer-subtitle">Quick Links</h5>
+        <ul class="list-unstyled footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-3">
+        <h5 class="footer-subtitle">Customer Service</h5>
+        <ul class="list-unstyled footer-list">
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col-md-3">
+       <h5 class="footer-subtitle">Contact Us</h5>
+        <ul class="list-unstyled footer-list">
+          <li>Email: support@petalia.com</li>
+          <li>Phone: +961 81 234 567</li>
+          <!-- Social icons next to each other -->
+          <li class="mt-3 d-flex align-items-center gap-3" >
+            <a href="#" class="social-icon">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+  </div>
+
+  <div class="footer-bottom text-center py-3">
+    © 2025 Petalia. All Rights Reserved.
+  </div>
+</footer>
+</body>
+</html>

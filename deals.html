@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deals — Petalia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style-sheets/deals.css">
+  <link rel="stylesheet" href="style-sheets/common.css">
+  <link rel="stylesheet" href="style-sheets/nav.css">
+  <link rel="stylesheet" href="style-sheets/footer.css">
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-pink">
+    <div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+  <img src="images-petalia/LOGO.svg" alt="Petalia Logo" >
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain3" aria-controls="navMain3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain3">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="collections.html" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
+            <ul class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <li><a class="dropdown-item" href="collections.html#him">For Him</a></li>
+              <li><a class="dropdown-item" href="collections.html#her">For Her</a></li>
+              <li><a class="dropdown-item" href="collections.html#unisex">Unisex</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="deals.html">Deals</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link cart-link" href="cart.html" aria-label="Cart"><i class="bi bi-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="mb-5 text-center page-title" id="timer">Limited Time Offers</h1>
+    
+    <!-- Countdown Timer Header -->
+    <div class="countdown-header mb-5 p-4 text-center rounded">
+      <h3 class="mb-2 ">FLASH SALE ENDS IN</h3>
+      <div class="timer-display" id="mainTimer">
+        <span class="timer-digit">00</span><span class="timer-label">d</span>
+        <span class="timer-digit">00</span><span class="timer-label">h</span>
+        <span class="timer-digit">00</span><span class="timer-label">m</span>
+        <span class="timer-digit">00</span><span class="timer-label">s</span>
+      </div>
+      <p class="text-muted mt-3 ">Don't miss out on these exclusive deals!</p>
+    </div>
+
+    <!-- Featured Deals -->
+    <div class="row g-4 mb-5"id="limiteddeals">
+
+      <div class="col-lg-6">
+        <div class="p-5 deals-card  position-relative">
+          <div class="deal-badge">Limited Deal</div>
+
+          <h4 class="mb-3">MEN's Set</h4>
+          <p class="deal-desc ">Buy Azure Tanzy, Green Apple and cherry<span class="free-item"> get Vanilla for FREE!! </span></p>
+           <div class=" mb-3 ">
+            <img class="image-deals" src="images-petalia/set-A.png" alt="Azure Tanzy bottle">
+           </div>
+          <div class="price-section mb-4">
+            <span class="price-old">$20</span>
+            <span class="price-now">$15</span>
+            <span class="discount-badge">-25%</span>
+          </div>
+          
+          <div class="countdown-timer mt-auto" data-end="2025-12-31T23:59:59">
+            <small class="text-muted">Deal expires in: <span class="deal-time">5d 3h 22m</span></small>
+           
+          </div>
+          <button class="btn btn-add-to-card mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-6">
+        <div class="p-5 deals-card position-relative">
+          <div class="deal-badge">Hot Deal</div>
+
+          <h4 class="mb-3">WOMEN's Set</h4>
+           <p class="deal-desc ">Buy Blush Bloom, Lueur Femme and Velvet Petal<span class="free-item"> get Desert Aura for FREE!! </span></p>
+
+          <div class=" mb-3 ">
+            <img  class="image-deals"src="images-petalia/set-B.jpg" alt="Azure Tanzy bottle">
+          </div>
+          <div class="price-section mb-4">
+            <span class="price-old">$18</span>
+            <span class="price-now">$12</span>
+            <span class="discount-badge">-33%</span>
+          </div>
+          
+          <div class="countdown-timer mt-auto" data-end="2025-12-25T23:59:59">
+            <small class="text-muted">Deal expires in: <span class="deal-time">5d 3h 8m</span></small>
+            
+          </div>
+          <button class="btn btn-add-to-card mt-3">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wrapped Perfume Bundles -->
+
+
+<div class="row g-4 mb-5"id="bundles">
+      <h2 class="text-center bundles-title">Luxury Perfume Bundles</h2>
+      <p class="text-center text-white mb-5">Beautifully wrapped gift sets</p>
+      
+      <div class="col-lg-6">
+        <div class="p-5 deals-card h-100 position-relative">
+
+          <h4 class="mb-3">Nocturnal Steel & Soft Seraph</h4>
+          <p class="deal-desc mb-4">Exquisite ribbon bouquet with seasonal accents. Perfect for any occasion.</p>
+            <div class=" mb-3 ">
+            <img class="image-deals" src="images-petalia/bundle-A.jpg" alt="bundle-A">
+            </div>
+            <p class="text-muted small mb-3">A perfect harmony of floral notes wrapped in an elegant gift package emjoy it</p>
+            <div class="bundle-price-section">
+              <span class="bundle-price">$35</span>
+              <span class="bundle-savings">Save $8</span>
+            </div>
+          <button class="btn btn-add-to-card mt-2">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="p-5 deals-card h-100 position-relative">
+          <h4 class="mb-3">Warm Chocolate & Lueur Femme Duo</h4>
+          <p class="deal-desc mb-4">Hand-picked selection perfect for intimate celebrations and.</p>
+
+          <div class=" mb-3 ">
+            <img class="image-deals" src="images-petalia/bundle-B.jpg" alt="bundle-B">
+          </div>
+
+            <p class="text-muted small mb-3">A perfect harmony of floral notes wrapped in an elegant gift package emjoy it</p>
+            <div class="bundle-price-section">
+              <span class="bundle-price">$35</span>
+              <span class="bundle-savings">Save $8</span>
+            
+          </div>
+          <button class="btn btn-add-to-card mt-2">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<footer class="petalia-footer mt-5">
+  <div class="container py-4">
+
+  
+<div class="d-md-none text-center">
+
+
+  <div class="mb-4">
+    <h6 class="footer-subtitle">Deals</h6>
+    <ul class="list-unstyled footer-list">
+      <li><a href="deals.html#timer">Timer</a></li>
+      <li><a href="deals.html#limiteddeals">Limited Deals</a></li>
+      <li><a href="deals.html#Bundles">Bundles</a></li>
+    </ul>
+  </div>
+
+  <!-- Column 2 -->
+  <div class="mb-4">
+    <h6 class="footer-subtitle">Quick Links</h6>
+    <ul class="list-unstyled footer-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="deals.html">Deals</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </div>
+
+  <!-- Column 3 -->
+  <div class="mb-4">
+    <h6 class="footer-subtitle">Customer Service</h6>
+    <ul class="list-unstyled footer-list">
+      <li><a href="#">Shipping & Returns</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+  </div>
+
+  <!-- Column 4 -->
+  <div class="mb-4">
+    <h6 class="footer-subtitle">Contact</h6>
+    <ul class="list-unstyled footer-list">
+      <li>Email: support@petalia.com</li>
+      <li>Phone: +961 81 234 567</li>
+      <li class="mt-3 d-flex justify-content-center gap-3">
+        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+    <!-- Desktop: 4 Columns -->
+    <div class="row d-none d-md-flex pt-4">
+
+      <!-- Column 1 -->
+      <div class="col-md-3">
+        <h5 class="footer-subtitle">Deals</h5>
+        <ul class="list-unstyled footer-list">
+         <li><a href="deals.html#timer">Timer</a></li>
+         <li><a href="deals.html#limiteddeals">Limited Deals</a></li>
+         <li><a href="deals.html#Bundles">Bundles</a></li>
+       </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-3">
+        <h5 class="footer-subtitle">Quick Links</h5>
+        <ul class="list-unstyled footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-3">
+        <h5 class="footer-subtitle">Customer Service</h5>
+        <ul class="list-unstyled footer-list">
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col-md-3">
+       <h5 class="footer-subtitle">Contact Us</h5>
+        <ul class="list-unstyled footer-list">
+          <li>Email: support@petalia.com</li>
+          <li>Phone: +961 81 234 567</li>
+          <!-- Social icons next to each other -->
+          <li class="mt-3 d-flex align-items-center gap-3" >
+            <a href="#" class="social-icon">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+  </div>
+
+  <div class="footer-bottom text-center py-3">
+    © 2025 Petalia. All Rights Reserved.
+  </div>
+</footer>
+</body>
+</html>

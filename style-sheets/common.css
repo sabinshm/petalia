@@ -1,0 +1,174 @@
+
+/* end of file */
+:root {
+  --pink-1: #f9a8d4;
+  --pink-2: #f472b6;
+  --pink-3: #f0d9f0;
+  --sage: #b9f5c9;
+  --muted: #6b7280;
+  --glass: rgba(255, 255, 255, 0.6);
+  --card-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  --cta: linear-gradient(90deg, var(--pink-2), #ec4899);
+  --light-green: #a8dadc;
+  --green: #6d9f71;
+}
+
+/* ===== TABLE OF CONTENTS =====
+  1) VARIABLES & GLOBALS
+  2) NAVBAR & SITE-WIDE COMPONENTS
+  3) HERO / HOME
+  4) CONTACT PAGE
+  5) PRODUCT THUMBS / CARDS
+  6) CART PAGE
+  7) DEALS PAGE
+  8) BUNDLES
+  9) FOOTER
+ 10) UTILITIES & ANIMATIONS
+ */
+
+/* base */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, var(--pink-2), var(--pink-3));
+  color: #fff;
+}
+
+
+.page-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--green);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-cta {
+  background-color: #6d9f71;
+  color: white;
+  font-weight: 300;
+  border-radius: 30px;
+  padding: 10px 22px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: white;
+  color: var(--green);
+}
+.btn-add-to-card {
+  background-color: #6d9f71;
+  border-color: #6d9f71;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 14px;
+  transition: all 0.2s;
+}
+.btn-add-to-card:hover {
+  background: #fff;
+  color: #6d9f71;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.flower-animation {
+  position: absolute;
+  font-size: 2.5rem;
+  top: -5px;
+  pointer-events: none;
+  z-index: 1000;
+  animation: flower-across 1s ease-out forwards;
+}
+
+@keyframes flower-across {
+  0% {
+    left: 0;
+    transform: scale(0.5) translateX(-50%);
+    opacity: 1;
+  }
+  50% {
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    transform: scale(0.5) translateX(-50%);
+    opacity: 0;
+  }
+}
+.card-pink {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+.card-pink h5 {
+  color: #555;
+  font-family: "Dancing Script", cursive;
+}
+
+.card-pink p {
+  color: #555;
+}
+.card-pink cite {
+  font-weight: bold;
+  color: #ea9ab2;
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+}
+.homecard:hover,
+.card-pink:hover {
+  transform: translateY(-3px); /* lift up */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+
+/* Additional responsive improvements */
+@media (max-width: 768px) {
+  .row.g-4 {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+  }
+
+  .homecard {
+    padding: 1.5rem !important;
+  }
+
+  .card-pink {
+    padding: 15px;
+  }
+
+  .card-pink h5 {
+    font-size: 1.1rem;
+  }
+
+  .card-pink p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .row.g-4 {
+    --bs-gutter-x: 0.5rem;
+    --bs-gutter-y: 0.5rem;
+  }
+
+  .homecard {
+    padding: 1rem !important;
+  }
+
+  .card-pink {
+    padding: 12px;
+  }
+
+  .card-pink h5 {
+    font-size: 1rem;
+  }
+
+  .card-pink p {
+    font-size: 0.85rem;
+  }
+}

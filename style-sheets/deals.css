@@ -1,0 +1,271 @@
+
+/* ===== DEALS PAGE STYLES ===== */
+
+/* Countdown Header */
+.countdown-header {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+  animation: pulse-glow 2s infinite;
+}
+.countdown-header h3{
+  font-weight: 400;
+  color:#555;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(240, 217, 240, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(240, 217, 240, 0.6);
+  }
+}
+
+
+.timer-display {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 1.5rem 0;
+  font-family: "Courier New", monospace;
+}
+
+.timer-digit {
+  background:#6d9f71;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.timer-label {
+  font-size: 1rem;
+  color:#555;
+  margin-left: 0.25rem;
+}
+
+
+.deal-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(90deg, var(--pink-2), #ec4899);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.image-deals {
+  width: 100%;
+  object-fit: contain;   /* fit inside, no cropping */
+}
+.deal-desc {
+  color: #555;
+  font-size: 1Rem;
+
+}
+.free-item{
+  color: #6d9f71;
+  font-size: 1rem;
+
+}
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-old {
+  font-size: 1rem;
+  color: black;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.price-now {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #6D9F71;
+}
+
+.discount-badge {
+  background: var(--green);
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+
+
+/* Bundles Section */
+.bundles-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:#6d9f71;
+}
+
+
+
+/* Bundle Info */
+.perfume-bundle h4 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.bundle-price-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.bundle-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #555;
+}
+
+.bundle-savings {
+  background: var(--green);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ===== COMPONENT: GLASS (Used for cards and hero containers) ===== */
+
+@media (max-width: 768px) {
+
+  .timer-display {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+
+  .timer-digit {
+    min-width: 50px;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .timer-label {
+    font-size: 0.8rem;
+  }
+
+  .bundles-title {
+    font-size: 1.8rem;
+  }
+
+  .perfume-bundle {
+    margin: 1rem 0;
+  }
+}
+
+
+.deals-card{
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  border: 10px;
+  padding: 20px;
+}
+.deals-card h4{
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 900;
+   color:#555;
+}
+.deals-card button{
+  width: 100%;
+}
+
+/* Responsive adjustments for deals cards */
+@media (max-width: 768px) {
+  .deals-card {
+    padding: 15px;
+  }
+
+  .deals-card h4 {
+    font-size: 1.3rem;
+  }
+
+  .deal-desc {
+    font-size: 0.9rem;
+  }
+
+  .price-now {
+    font-size: 1.5rem;
+  }
+
+  .bundle-price {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .deals-card {
+    padding: 10px;
+  }
+
+  .deals-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .deal-desc {
+    font-size: 0.8rem;
+  }
+
+  .price-now {
+    font-size: 1.3rem;
+  }
+
+  .bundle-price {
+    font-size: 1.3rem;
+  }
+
+  .bundles-title {
+    font-size: 1.5rem;
+  }
+}
+
+.countdown-progress {
+  position: relative;
+}
+
+.countdown-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.countdown-bar::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ea9ab2, #ec4899);
+  animation: countdown-fill 10s linear infinite;
+}
+
+@keyframes countdown-fill {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

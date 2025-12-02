@@ -1,0 +1,47 @@
+
+.petalia-footer {
+  background: #111;
+  color: #d6d6d6;
+  font-size: 12px;
+}
+/* ===== Section: FOOTER ===== */
+
+.footer-subtitle {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  color: #bdbdbd;
+}
+
+.footer-list li a {
+  color: #bdbdbd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-list li a:hover {
+  color: #f472b6;
+}
+
+/* Mobile dropdown button */
+.footer-btn {
+  background: #191919;
+  border: 1px solid #292929;
+  padding: 10px 12px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.footer-btn:hover {
+  background: #222;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  color: #777;
+  font-size: 13px;
+}
